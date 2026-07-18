@@ -1,0 +1,967 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Wedgemount Lake — A Field Guide to Garibaldi&rsquo;s Steepest Trail, BC</title>
+<link rel="canonical" href="https://wedgemountlake.com/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="An honest field guide to Wedgemount Lake in Garibaldi Provincial Park, north of Whistler, BC. The relentless 1,200 m climb, the boulder headwall, the BCMC hut, the tent platforms, and the glacier retreating in real time.">
+<meta name="keywords" content="Wedgemount Lake, Wedgemount Lake hike, Wedgemount Glacier, Garibaldi Provincial Park, Wedge Mountain, Whistler hikes, steepest hike Whistler, BCMC hut, Wedgemount Lake camping, glacial lake BC">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wedgemount Lake — A Field Guide to Garibaldi&rsquo;s Steepest Trail">
+<meta property="og:description" content="1,200 m up in 7 km. A milk-turquoise lake at 1,900 m, a small hut, whistling marmots, and a glacier you can watch disappearing. The honest version of Wedgemount.">
+<meta property="og:url" content="https://wedgemountlake.com/">
+<meta property="og:locale" content="en_CA">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f4f2ec;
+    --paper-2: #ece9e0;
+    --paper-3: #e4e0d4;
+    --ink: #1d1b18;
+    --ink-soft: #33302a;
+    --ink-mute: #726c60;
+    --rule: #d8d3c5;
+    --rule-strong: #bfb9a8;
+    --glacier: #3d6b7d;       /* glacier blue */
+    --glacier-deep: #29505f;
+    --glacier-pale: #9fc2cc;
+    --melt: #cfe2e6;
+    --moraine: #6f6c66;       /* moraine grey */
+    --marmot: #7a5230;        /* marmot brown */
+    --marmot-soft: #a0713f;
+    --warn: #8c4a2f;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--paper); color: var(--ink);
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    font-size: 17px;
+    line-height: 1.68;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection { background: var(--glacier); color: var(--paper); }
+
+  a { color: inherit; text-decoration: none; }
+  .ul { border-bottom: 1px solid var(--rule-strong); transition: border-color .2s; }
+  .ul:hover { border-bottom-color: var(--glacier); }
+
+  h1, h2, h3 {
+    font-family: "Fraunces", "Times New Roman", serif;
+    font-weight: 400;
+    line-height: 1.06;
+    letter-spacing: -0.02em;
+    margin: 0;
+    font-variation-settings: "opsz" 144, "SOFT" 30;
+    color: var(--ink);
+  }
+  h1 { font-size: clamp(2.6rem, 6.5vw, 4.6rem); }
+  h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); }
+  h3 { font-size: 1.22rem; font-weight: 500; line-height: 1.3; }
+  p { margin: 0 0 1.05rem; color: var(--ink-soft); font-size: 1.03rem; line-height: 1.72; }
+
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 1.5rem; }
+  .narrow { max-width: 720px; margin: 0 auto; padding: 0 1.5rem; }
+
+  .eyebrow {
+    display: flex; align-items: center; gap: 1rem;
+    font-size: 0.7rem; letter-spacing: 0.24em; text-transform: uppercase;
+    font-weight: 600; color: var(--glacier-deep);
+    margin-bottom: 1rem;
+  }
+  .eyebrow::after { content: ""; height: 1px; background: var(--rule-strong); flex: 1; }
+
+  /* ---------- NAV ---------- */
+  nav.top {
+    position: sticky; top: 0; z-index: 60;
+    background: color-mix(in srgb, var(--paper) 88%, transparent);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--rule);
+  }
+  nav.top .inner {
+    max-width: 1120px; margin: 0 auto;
+    display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
+    padding: 0.85rem 1.5rem;
+  }
+  .wordmark { font-family: "Fraunces", serif; font-size: 1.02rem; font-weight: 500; letter-spacing: -0.01em; white-space: nowrap; }
+  .wordmark em { font-style: italic; color: var(--glacier-deep); }
+  .wordmark small {
+    display: block; font-family: "Inter", sans-serif; font-weight: 500;
+    font-size: 0.58rem; letter-spacing: 0.26em; text-transform: uppercase;
+    color: var(--ink-mute); margin-top: 0.1rem;
+  }
+  nav.top .links { display: flex; gap: 1.4rem; }
+  nav.top .links a {
+    font-size: 0.73rem; letter-spacing: 0.16em; text-transform: uppercase;
+    font-weight: 500; color: var(--ink-mute);
+  }
+  nav.top .links a:hover { color: var(--glacier-deep); }
+  @media (max-width: 780px) { nav.top .links { display: none; } }
+
+  /* ---------- MASTHEAD ---------- */
+  header.masthead { padding: 4.5rem 0 0; text-align: center; }
+  .volume-line {
+    font-size: 0.7rem; letter-spacing: 0.28em; text-transform: uppercase;
+    font-weight: 600; color: var(--ink-mute);
+    display: inline-flex; align-items: center; gap: 0.9rem;
+  }
+  .volume-line::before, .volume-line::after { content: "—"; color: var(--rule-strong); letter-spacing: 0; }
+  header.masthead h1 { margin: 1.1rem auto 1.2rem; max-width: 14ch; }
+  .deck {
+    font-family: "Fraunces", serif; font-style: italic; font-weight: 400;
+    font-size: clamp(1.15rem, 2.2vw, 1.45rem); line-height: 1.5;
+    color: var(--ink-soft); max-width: 44ch; margin: 0 auto 2.5rem;
+    font-variation-settings: "opsz" 60, "SOFT" 30;
+  }
+  .deck strong { font-weight: 500; color: var(--glacier-deep); font-style: normal; }
+
+  /* ---------- COORDINATE RIBBON ---------- */
+  .ribbon {
+    border-top: 1px solid var(--rule-strong);
+    border-bottom: 1px solid var(--rule-strong);
+    display: grid; grid-template-columns: repeat(6, auto);
+    justify-content: center; gap: 0 3rem;
+    padding: 0.85rem 1rem;
+    max-width: 1120px; margin: 0 auto;
+  }
+  .ribbon .cell { text-align: center; padding: 0.25rem 0; }
+  .ribbon .k { font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 600; color: var(--ink-mute); }
+  .ribbon .v { font-family: "Fraunces", serif; font-size: 1.02rem; font-weight: 500; color: var(--ink); letter-spacing: -0.01em; }
+  .ribbon .v.blue { color: var(--glacier-deep); }
+  @media (max-width: 900px) { .ribbon { grid-template-columns: repeat(3, auto); gap: 0.6rem 2.2rem; } }
+  @media (max-width: 480px) { .ribbon { grid-template-columns: repeat(2, auto); gap: 0.6rem 2rem; } }
+
+  /* ---------- HERO CROSS-SECTION ---------- */
+  .hero-x { padding: 0; background: var(--paper); }
+  .hero-x svg { display: block; width: 100%; height: auto; }
+  .hero-x .caption {
+    text-align: center; font-size: 0.78rem; color: var(--ink-mute);
+    padding: 0.9rem 1.5rem 0;
+  }
+  .hero-x .caption em { font-family: "Fraunces", serif; font-style: italic; font-size: 0.92rem; color: var(--ink-soft); }
+
+  /* ---------- LEDGER (quick take) ---------- */
+  section.ledger { padding: 5.5rem 0 6rem; }
+  .ledger-grid {
+    display: grid; grid-template-columns: 1.1fr 1fr 1fr;
+    gap: 0; border: 1px solid var(--rule-strong);
+    background: var(--paper-2);
+  }
+  .ledger-grid > div {
+    padding: 1.6rem 1.5rem;
+    border-right: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .ledger-grid > div:nth-child(3n) { border-right: none; }
+  .ledger-grid > div:nth-last-child(-n+3) { border-bottom: none; }
+  @media (max-width: 760px) {
+    .ledger-grid { grid-template-columns: 1fr 1fr; }
+    .ledger-grid > div { border-right: 1px solid var(--rule) !important; border-bottom: 1px solid var(--rule) !important; }
+    .ledger-grid > div:nth-child(2n) { border-right: none !important; }
+    .ledger-grid > div:nth-last-child(-n+2) { border-bottom: none !important; }
+  }
+  .ledger-grid .num {
+    font-family: "Fraunces", serif; font-size: clamp(1.7rem, 3.4vw, 2.4rem);
+    font-weight: 400; letter-spacing: -0.02em; color: var(--glacier-deep); line-height: 1.05;
+  }
+  .ledger-grid .num.brown { color: var(--marmot); }
+  .ledger-grid .num.grey { color: var(--moraine); }
+  .ledger-grid .lbl { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 600; color: var(--ink-mute); margin-top: 0.45rem; }
+  .ledger-grid .sub { font-size: 0.85rem; color: var(--ink-soft); margin-top: 0.35rem; line-height: 1.5; }
+
+  /* ---------- ESSAY ---------- */
+  section.essay { padding: 0 0 6rem; }
+  .essay-cols { display: grid; grid-template-columns: 200px 1fr; gap: 3.5rem; max-width: 980px; margin: 0 auto; padding: 0 1.5rem; }
+  @media (max-width: 860px) { .essay-cols { grid-template-columns: 1fr; gap: 1.6rem; } }
+  .essay-margin {
+    font-size: 0.82rem; color: var(--ink-mute); line-height: 1.65;
+    border-top: 3px solid var(--ink); padding-top: 1rem;
+    position: sticky; top: 5rem; align-self: start;
+  }
+  .essay-margin strong { display: block; font-size: 0.64rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink); margin-bottom: 0.6rem; }
+  @media (max-width: 860px) { .essay-margin { position: static; } }
+  .essay-body p:first-of-type::first-letter {
+    font-family: "Fraunces", serif;
+    font-size: 4.4rem; font-weight: 400;
+    float: left; line-height: 0.82;
+    padding: 0.08em 0.12em 0 0;
+    color: var(--glacier-deep);
+    font-variation-settings: "opsz" 144, "SOFT" 30;
+  }
+  .pullquote {
+    margin: 2.6rem 0; padding: 1.8rem 0;
+    border-top: 1px solid var(--rule-strong); border-bottom: 1px solid var(--rule-strong);
+    font-family: "Fraunces", serif; font-style: italic; font-weight: 400;
+    font-size: clamp(1.3rem, 2.6vw, 1.7rem); line-height: 1.45;
+    color: var(--ink); text-align: center;
+    font-variation-settings: "opsz" 90, "SOFT" 30;
+  }
+  .pullquote span { color: var(--glacier-deep); }
+
+  /* ---------- GRADE PROFILE ---------- */
+  section.grade { padding: 6rem 0; background: var(--paper-2); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .grade-head { max-width: 720px; margin: 0 auto 2.5rem; padding: 0 1.5rem; }
+  .profile-frame { max-width: 980px; margin: 0 auto; padding: 0 1.5rem; }
+  .profile-frame svg { display: block; width: 100%; height: auto; background: var(--paper); border: 1px solid var(--rule-strong); }
+  .segments { max-width: 980px; margin: 1.8rem auto 0; padding: 0 1.5rem; }
+  .seg-row {
+    display: grid; grid-template-columns: 3.2rem 1fr 7.5rem; gap: 1.2rem; align-items: baseline;
+    padding: 0.95rem 0; border-bottom: 1px solid var(--rule);
+  }
+  .seg-row:first-child { border-top: 1px solid var(--rule-strong); }
+  .seg-row .km { font-family: "Fraunces", serif; font-style: italic; color: var(--glacier-deep); font-size: 0.98rem; white-space: nowrap; }
+  .seg-row .what { font-size: 0.95rem; color: var(--ink-soft); line-height: 1.55; }
+  .seg-row .what strong { color: var(--ink); font-weight: 600; font-size: 0.95rem; }
+  .seg-row .feel { font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; color: var(--marmot); text-align: right; }
+  @media (max-width: 640px) {
+    .seg-row { grid-template-columns: 3rem 1fr; }
+    .seg-row .feel { grid-column: 2; text-align: left; }
+  }
+
+  /* ---------- GLACIER ---------- */
+  section.glacier { padding: 6.5rem 0; background: var(--glacier-deep); color: var(--melt); }
+  section.glacier .eyebrow { color: var(--glacier-pale); }
+  section.glacier .eyebrow::after { background: rgba(207,226,230,0.25); }
+  section.glacier h2 { color: #f2f7f8; }
+  section.glacier p { color: rgba(230,240,242,0.88); }
+  section.glacier em { color: #fff; }
+  .glacier-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center; }
+  @media (max-width: 860px) { .glacier-grid { grid-template-columns: 1fr; gap: 2.2rem; } }
+  .glacier-fig svg { display: block; width: 100%; height: auto; }
+  .glacier-fig .figcap { font-size: 0.76rem; color: rgba(207,226,230,0.7); margin-top: 0.7rem; text-align: center; }
+  .glacier-rules {
+    margin-top: 1.6rem; padding: 1.1rem 1.3rem;
+    border: 1px solid rgba(207,226,230,0.3);
+    font-size: 0.92rem; line-height: 1.65; color: rgba(230,240,242,0.9);
+  }
+  .glacier-rules strong { display: block; font-size: 0.64rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--glacier-pale); margin-bottom: 0.5rem; font-weight: 600; }
+
+  /* ---------- FIELD NOTES TRIO ---------- */
+  section.notes { padding: 6rem 0; }
+  .notes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.6rem; margin-top: 2.2rem; }
+  @media (max-width: 820px) { .notes-grid { grid-template-columns: 1fr; gap: 2rem; } }
+  .note h3 { margin-bottom: 0.55rem; }
+  .note .n {
+    font-family: "Fraunces", serif; font-style: italic; color: var(--marmot);
+    font-size: 0.95rem; display: block; margin-bottom: 0.5rem;
+  }
+  .note p { font-size: 0.95rem; margin: 0; }
+
+  /* ---------- HUT + PLATFORMS ---------- */
+  section.sleep { padding: 6rem 0; background: var(--paper-2); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .sleep-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2.2rem; }
+  @media (max-width: 760px) { .sleep-grid { grid-template-columns: 1fr; } }
+  .sleep-card { background: var(--paper); border: 1px solid var(--rule-strong); padding: 1.8rem 1.7rem; }
+  .sleep-card h3 { margin-bottom: 0.6rem; }
+  .sleep-card .tag { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 600; color: var(--glacier-deep); display: block; margin-bottom: 0.7rem; }
+  .sleep-card p { font-size: 0.95rem; margin-bottom: 0.6rem; }
+  .sleep-card p:last-child { margin-bottom: 0; }
+
+  /* ---------- SEASON TABLE ---------- */
+  section.season { padding: 6rem 0; }
+  .season-rows { margin-top: 2rem; border-top: 1px solid var(--rule-strong); }
+  .season-row {
+    display: grid; grid-template-columns: 10rem 1fr 9rem; gap: 1.4rem; align-items: baseline;
+    padding: 1.15rem 0; border-bottom: 1px solid var(--rule);
+  }
+  .season-row .m { font-family: "Fraunces", serif; font-style: italic; font-size: 1.05rem; color: var(--ink); }
+  .season-row .d { font-size: 0.95rem; color: var(--ink-soft); line-height: 1.6; }
+  .season-row .verdict { font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; text-align: right; }
+  .season-row .verdict.go { color: var(--glacier-deep); }
+  .season-row .verdict.maybe { color: var(--marmot); }
+  .season-row .verdict.no { color: var(--warn); }
+  @media (max-width: 680px) {
+    .season-row { grid-template-columns: 1fr; gap: 0.3rem; }
+    .season-row .verdict { text-align: left; }
+  }
+
+  /* ---------- HONEST ---------- */
+  section.honest { padding: 6rem 0; border-top: 1px solid var(--rule); }
+  section.honest em { color: var(--ink); }
+  .honest-flag {
+    margin-top: 1.6rem; padding: 1.2rem 1.4rem;
+    border-left: 3px solid var(--warn); background: rgba(140,74,47,0.07);
+    font-size: 0.94rem; color: var(--ink-soft); line-height: 1.65;
+  }
+  .honest-flag strong { display: block; font-size: 0.64rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--warn); margin-bottom: 0.45rem; font-weight: 600; }
+
+  /* ---------- SUPPORT ---------- */
+  section.support { padding: 6rem 0; background: var(--paper-3); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .support-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem; margin-top: 2rem; }
+  @media (max-width: 720px) { .support-grid { grid-template-columns: 1fr; } }
+  .support-card { background: var(--paper); border: 1px solid var(--rule-strong); padding: 1.7rem 1.6rem; display: flex; flex-direction: column; }
+  .support-card h3 { margin-bottom: 0.5rem; }
+  .support-card p { font-size: 0.94rem; margin-bottom: 1.1rem; }
+  .support-card .cta {
+    margin-top: auto; align-self: flex-start;
+    padding: 0.55rem 1.15rem; border: 1px solid var(--glacier-deep);
+    font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600;
+    color: var(--glacier-deep); border-radius: 999px; transition: all .2s;
+  }
+  .support-card .cta:hover { background: var(--glacier-deep); color: var(--paper); }
+  .recovery {
+    margin-top: 2rem; max-width: 62ch;
+    font-size: 0.98rem; color: var(--ink-soft); line-height: 1.7;
+  }
+  .recovery em { font-family: "Fraunces", serif; color: var(--ink); }
+
+  /* ---------- FAQ ---------- */
+  section.faq { padding: 6rem 0; }
+  .faq-list { margin-top: 2rem; border-top: 1px solid var(--rule-strong); }
+  details.qa { border-bottom: 1px solid var(--rule); }
+  details.qa > summary {
+    list-style: none; cursor: pointer; outline: none;
+    padding: 1.4rem 0;
+    display: flex; gap: 1.1rem; align-items: baseline;
+    font-family: "Fraunces", serif; font-weight: 500;
+    font-size: 1.18rem; line-height: 1.35; letter-spacing: -0.01em;
+  }
+  details.qa > summary::-webkit-details-marker { display: none; }
+  details.qa > summary:hover { color: var(--glacier-deep); }
+  .qa .qmark {
+    flex: 0 0 auto;
+    font-family: "Inter", sans-serif; font-weight: 300; font-size: 1.4rem;
+    color: var(--marmot-soft); line-height: 1; transition: transform .2s;
+  }
+  details.qa[open] > summary .qmark { transform: rotate(45deg); }
+  .qa .ans { padding: 0 0 1.6rem 2.5rem; }
+  @media (max-width: 640px) { .qa .ans { padding-left: 0; } }
+  .qa .ans p { font-size: 0.99rem; margin-bottom: 0.85rem; }
+  .qa .ans p:last-child { margin: 0; }
+  .qa .ans a { border-bottom: 1px solid var(--rule-strong); }
+  .qa .ans a:hover { border-bottom-color: var(--glacier); }
+
+  /* ---------- FOOTER ---------- */
+  footer.foot { padding: 3.5rem 0 2.2rem; background: var(--paper-2); border-top: 1px solid var(--rule-strong); }
+  .foot-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 2.5rem; margin-bottom: 2.2rem; }
+  @media (max-width: 720px) { .foot-grid { grid-template-columns: 1fr; gap: 1.8rem; } }
+  .foot-grid h4 {
+    font-family: "Inter", sans-serif; font-size: 0.64rem; letter-spacing: 0.24em;
+    text-transform: uppercase; color: var(--ink-mute); font-weight: 600; margin: 0 0 0.8rem;
+  }
+  .foot-grid p { font-size: 0.88rem; margin: 0; }
+  .foot-grid ul { list-style: none; margin: 0; padding: 0; }
+  .foot-grid li { margin-bottom: 0.45rem; font-size: 0.88rem; }
+  .foot-grid li a:hover { color: var(--glacier-deep); }
+  .foot-bottom {
+    border-top: 1px solid var(--rule); padding-top: 1.3rem;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.8rem;
+    font-size: 0.75rem; color: var(--ink-mute); line-height: 1.6;
+  }
+  .foot-bottom em { font-family: "Fraunces", serif; }
+</style>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav class="top">
+  <div class="inner">
+    <a href="https://seatoskytrails.com/" class="wordmark">
+      Sea to Sky <em>Trails</em>
+      <small>Field Guide &middot; Vol. II, No. 15</small>
+    </a>
+    <div class="links">
+      <a href="#ledger">The Ledger</a>
+      <a href="#grade">The Grade</a>
+      <a href="#glacier">The Glacier</a>
+      <a href="#sleep">Hut &amp; Camping</a>
+      <a href="#season">When</a>
+      <a href="#faq">Questions</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== MASTHEAD ===================== -->
+<header class="masthead">
+  <div class="wrap">
+    <span class="volume-line">Garibaldi Provincial Park &middot; North of Whistler</span>
+    <h1>Wedgemount Lake</h1>
+    <p class="deck">The steepest trail in the corridor that&rsquo;s worth every step &mdash; <strong>on the order of 1,200 metres up in about seven kilometres</strong> &mdash; ending at a milk-turquoise lake, a tiny hut, and a glacier you can watch disappearing.</p>
+  </div>
+
+  <div class="ribbon" role="list" aria-label="Trail statistics (approximate)">
+    <div class="cell" role="listitem"><div class="k">Lake elevation</div><div class="v blue">&asymp; 1,900 m</div></div>
+    <div class="cell" role="listitem"><div class="k">Gain</div><div class="v">&asymp; 1,200 m</div></div>
+    <div class="cell" role="listitem"><div class="k">One way</div><div class="v">&asymp; 7 km</div></div>
+    <div class="cell" role="listitem"><div class="k">Coordinates</div><div class="v">50.16&deg; N, 122.80&deg; W</div></div>
+    <div class="cell" role="listitem"><div class="k">Grade</div><div class="v blue">Relentless</div></div>
+    <div class="cell" role="listitem"><div class="k">Dogs</div><div class="v" style="color:var(--warn);">Not permitted</div></div>
+  </div>
+</header>
+
+<!-- ===================== HERO CROSS-SECTION ===================== -->
+<div class="hero-x" aria-hidden="false">
+  <div class="wrap" style="padding-top:2.5rem;">
+    <svg viewBox="0 0 1040 460" role="img" aria-label="Cross-section illustration of the Wedgemount trail: a steep slope rising from the valley floor to a hanging lake basin, with the Wedgemount Glacier above and a dashed outline showing its much larger former extent.">
+      <defs>
+        <linearGradient id="slopefill" x1="0" y1="1" x2="1" y2="0">
+          <stop offset="0" stop-color="#7d7a73"/>
+          <stop offset="1" stop-color="#615e58"/>
+        </linearGradient>
+        <linearGradient id="lakefill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#8fc3cd"/>
+          <stop offset="1" stop-color="#4d8496"/>
+        </linearGradient>
+        <linearGradient id="icefill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#eef6f7"/>
+          <stop offset="1" stop-color="#b9d6dc"/>
+        </linearGradient>
+        <linearGradient id="skyband" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#e9e6dc"/>
+          <stop offset="1" stop-color="#f4f2ec"/>
+        </linearGradient>
+      </defs>
+
+      <!-- sky -->
+      <rect x="0" y="0" width="1040" height="460" fill="url(#skyband)"/>
+
+      <!-- Wedge Mountain summit ridge, far background -->
+      <path d="M560 118 L640 54 L688 84 L742 40 L810 92 L880 74 L960 120 L1040 108 L1040 460 L560 460 Z" fill="#c9c5b8" opacity="0.55"/>
+      <path d="M742 40 L718 66 L734 62 L742 78 L752 60 L766 66 Z" fill="#f6f4ee" opacity="0.9"/>
+
+      <!-- dashed "then" outline of the former glacier: reaching down toward the lake -->
+      <path d="M676 148 C712 130 780 122 836 132 C900 144 942 168 972 196 C990 214 996 230 990 244 C960 252 900 250 848 240 C800 230 744 214 706 196 C684 186 668 168 676 148 Z"
+            fill="none" stroke="#5b8a99" stroke-width="2" stroke-dasharray="7 6" opacity="0.75"/>
+      <text x="962" y="188" font-family="Fraunces, serif" font-style="italic" font-size="15" fill="#4a7484" text-anchor="end" opacity="0.9">the ice, within living memory</text>
+
+      <!-- present glacier: smaller, pulled back high -->
+      <path d="M760 138 C792 124 846 120 884 130 C918 140 936 154 938 170 C930 182 900 188 864 184 C826 180 786 170 766 158 C756 152 754 144 760 138 Z" fill="url(#icefill)" stroke="#9fbfc7" stroke-width="1.4"/>
+      <path d="M790 142 L800 168 M826 136 L832 172 M862 136 L864 176 M896 142 L892 172" stroke="#a9c8cf" stroke-width="1.3" fill="none" opacity="0.8"/>
+      <text x="850" y="112" font-family="Fraunces, serif" font-style="italic" font-size="15" fill="#3d6b7d" text-anchor="middle">Wedgemount Glacier, today</text>
+
+      <!-- moraine ridge below glacier -->
+      <path d="M700 250 C740 236 800 240 860 248 C920 256 970 250 1000 244 L1040 250 L1040 460 L660 460 Z" fill="#8a867e"/>
+      <path d="M700 250 C740 236 800 240 860 248 C920 256 970 250 1000 244" fill="none" stroke="#6f6c66" stroke-width="2"/>
+
+      <!-- lake basin at ~1900 m -->
+      <path d="M560 262 L700 252 C700 252 690 268 688 276 L568 282 Z" fill="#9b978e"/>
+      <path d="M552 276 C600 268 660 268 692 274 L692 296 C650 304 594 304 552 298 Z" fill="url(#lakefill)"/>
+      <path d="M560 284 C596 280 646 280 682 283" stroke="#cfe6ea" stroke-width="1.6" fill="none" opacity="0.85"/>
+      <text x="622" y="248" font-family="Fraunces, serif" font-style="italic" font-size="16" fill="#29505f" text-anchor="middle">the lake &middot; &asymp;1,900 m</text>
+
+      <!-- BCMC hut mark -->
+      <g transform="translate(540,252)">
+        <path d="M0 12 L9 2 L18 12 Z" fill="#7a5230"/>
+        <rect x="3" y="12" width="12" height="8" fill="#8a6440"/>
+        <text x="-8" y="20" font-family="Inter, sans-serif" font-size="11" fill="#726c60" text-anchor="end">hut</text>
+      </g>
+
+      <!-- the slope itself: valley floor to basin lip -->
+      <path d="M0 432 L120 428 L200 414 L268 392 L330 362 L392 330 L448 300 L500 288 L560 296 L620 306 L700 302 L760 312 L880 320 L1040 316 L1040 460 L0 460 Z" fill="#b9b5a8" opacity="0.5"/>
+      <path d="M0 436 L90 430 C170 420 220 400 268 372 C320 340 352 310 386 282 C420 254 448 236 470 220 C492 204 512 192 528 186 C544 180 554 270 560 276 L560 460 L0 460 Z" fill="url(#slopefill)"/>
+
+      <!-- trail switchbacks on the slope -->
+      <path d="M60 430 C110 424 150 420 190 410 C160 402 130 402 106 404 C150 392 190 384 226 372 C196 366 170 368 148 370 C196 354 236 342 270 326 C244 322 222 324 204 326 C252 308 292 292 322 274 C300 270 282 272 268 274 C312 254 348 236 378 218 C360 214 346 216 334 218 C376 198 408 182 436 166 C422 162 410 164 400 166 C436 148 466 134 492 122"
+            fill="none" stroke="#e8e4d8" stroke-width="2.2" stroke-linecap="round" opacity="0.85"/>
+
+      <!-- boulder headwall near top -->
+      <g fill="#57544e" opacity="0.95">
+        <circle cx="470" cy="212" r="7"/><circle cx="488" cy="198" r="5.5"/><circle cx="502" cy="210" r="6.5"/>
+        <circle cx="516" cy="194" r="5"/><circle cx="528" cy="206" r="7"/><circle cx="482" cy="222" r="5"/>
+        <circle cx="510" cy="226" r="5.5"/><circle cx="538" cy="218" r="5"/>
+      </g>
+      <text x="452" y="180" font-family="Inter, sans-serif" font-size="12" fill="#726c60" text-anchor="end">boulders &amp; headwall</text>
+
+      <!-- marmot on a boulder -->
+      <g transform="translate(544,196)">
+        <ellipse cx="8" cy="6" rx="8" ry="4.6" fill="#7a5230"/>
+        <circle cx="15.5" cy="2.5" r="3.2" fill="#7a5230"/>
+        <circle cx="16.8" cy="1.6" r="0.7" fill="#f4f2ec"/>
+        <path d="M0.5 7 Q-3 8.5 -2.5 5.5" stroke="#7a5230" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      </g>
+
+      <!-- valley floor: creek + trailhead -->
+      <path d="M0 444 C60 440 140 442 220 446 C300 450 380 448 460 450 L460 460 L0 460 Z" fill="#a7c4bd" opacity="0.5"/>
+      <g transform="translate(56,414)">
+        <path d="M0 14 L7 0 L14 14" fill="none" stroke="#3f5748" stroke-width="2"/>
+        <path d="M18 14 L24 3 L30 14" fill="none" stroke="#3f5748" stroke-width="2"/>
+        <text x="-4" y="-6" font-family="Inter, sans-serif" font-size="12" fill="#726c60">trailhead &middot; gravel spur off Hwy 99</text>
+      </g>
+
+      <!-- elevation ticks on left -->
+      <g font-family="Inter, sans-serif" font-size="10.5" fill="#8d8779">
+        <line x1="24" y1="430" x2="40" y2="430" stroke="#bfb9a8" stroke-width="1"/><text x="24" y="424">&asymp;700 m</text>
+        <line x1="24" y1="276" x2="40" y2="276" stroke="#bfb9a8" stroke-width="1"/><text x="24" y="270">&asymp;1,900 m</text>
+      </g>
+    </svg>
+    <p class="caption"><em>Fig. 1 &mdash; The problem, in cross-section.</em> One valley floor, one hanging lake, and very little horizontal distance between them. Stats and outlines approximate; drawn for honesty, not survey accuracy.</p>
+  </div>
+</div>
+
+<!-- ===================== LEDGER ===================== -->
+<section class="ledger" id="ledger">
+  <div class="wrap">
+    <div class="eyebrow">The Ledger &middot; What You&rsquo;re Signing Up For</div>
+    <h2 style="max-width:24ch; margin-bottom:2rem;">Every number here is doing more work than it looks.</h2>
+
+    <div class="ledger-grid">
+      <div>
+        <div class="num">&asymp;1,200 m</div>
+        <div class="lbl">Elevation gain</div>
+        <div class="sub">Packed into about 7 km one-way. Almost none of it is flat. Hands-on-knees hiking in stretches.</div>
+      </div>
+      <div>
+        <div class="num grey">&asymp;17%</div>
+        <div class="lbl">Average grade</div>
+        <div class="sub">Roughly, gain over distance &mdash; and averages flatter the steep bits. The last push is the steepest.</div>
+      </div>
+      <div>
+        <div class="num brown">Full day</div>
+        <div class="lbl">Time budget</div>
+        <div class="sub">Budget generously and add margin. The descent is slower than your legs expect it to be.</div>
+      </div>
+      <div>
+        <div class="num">&asymp;1,900 m</div>
+        <div class="lbl">Lake elevation</div>
+        <div class="sub">A glacial basin under Wedge Mountain &mdash; the highest peak in Garibaldi Provincial Park.</div>
+      </div>
+      <div>
+        <div class="num brown">1 small hut</div>
+        <div class="lbl">At the lake</div>
+        <div class="sub">A modest BCMC hut, plus BC Parks tent platforms. Details and booking rules below.</div>
+      </div>
+      <div>
+        <div class="num grey">0 dogs</div>
+        <div class="lbl">Park rule</div>
+        <div class="sub">No dogs anywhere in Garibaldi Provincial Park. Day-use pass rules are seasonal &mdash; check BC Parks.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ESSAY ===================== -->
+<section class="essay">
+  <div class="essay-cols">
+    <aside class="essay-margin">
+      <strong>Filed From</strong>
+      Wedgemount Lake, Garibaldi Provincial Park &mdash; reached by a short gravel spur off Highway 99 north of Whistler village. Road condition varies; check before you commit a low-clearance car.
+    </aside>
+    <div class="essay-body">
+      <p>There is a kind of hike where the trail is the obstacle between you and the destination, and a kind where the trail <em>is</em> the destination. Wedgemount is stubbornly both. The destination &mdash; a milk-turquoise lake at roughly 1,900 metres, held in a stone bowl beneath Wedge Mountain, the highest peak in Garibaldi Park &mdash; is one of the great arrivals in the Coast Mountains. But nobody who has done this trail talks about the lake first. They talk about the climb.</p>
+      <p>The arithmetic is simple and merciless: on the order of 1,200 metres of gain in about seven kilometres, one-way. The trail does not believe in switchback diplomacy. It goes up, then it goes up differently, and near the top it stops pretending to be a trail at all &mdash; a rough boulder and headwall section where you use your hands, pick lines between rocks, and stop looking at your watch. Poles help enormously on the way up. On the way down they stop being optional: <em>the descent is where knees and ankles blow up</em>, and it takes longer than anyone plans for.</p>
+
+      <div class="pullquote">The lake doesn&rsquo;t reward you for arriving.<br>It rewards you <span>for what it took to arrive.</span></div>
+
+      <p>Then you top the lip of the basin and the whole ledger balances at once. The water is that improbable glacial milk-turquoise &mdash; rock flour, ground off the mountain by ice and held in suspension. Snow patches linger around the shore well into July. Marmots whistle from the boulders like referees. A small hut sits near the water, and above the far moraine the Wedgemount Glacier hangs in its shrinking corner of the cirque &mdash; more on that below, because it&rsquo;s the part of this place that changes every single year.</p>
+      <p>This is not a beginner objective, and it isn&rsquo;t trying to be. It&rsquo;s the corridor&rsquo;s honest test piece: no permit lottery drama, no famous photo prop, just a straightforward brutal climb to a place that earns every metre of it. Budget a full day. Bring more water than feels reasonable. And leave something in your legs for the way down.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GRADE PROFILE ===================== -->
+<section class="grade" id="grade">
+  <div class="grade-head">
+    <div class="eyebrow">The Grade, Honestly</div>
+    <h2>What &ldquo;steep&rdquo; actually means here.</h2>
+    <p style="margin-top:1rem;">Most trail profiles get drawn with a merciful vertical scale. This one doesn&rsquo;t need exaggerating. Distances and elevations below are approximate &mdash; the shape is the point.</p>
+  </div>
+
+  <div class="profile-frame">
+    <svg viewBox="0 0 960 380" role="img" aria-label="Approximate elevation profile of the Wedgemount Lake trail: from about 700 metres at the trailhead climbing continuously to about 1,900 metres at the lake over roughly 7 kilometres, steepening into a boulder headwall near the top.">
+      <defs>
+        <linearGradient id="proffill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#3d6b7d" stop-opacity="0.28"/>
+          <stop offset="1" stop-color="#3d6b7d" stop-opacity="0.04"/>
+        </linearGradient>
+      </defs>
+
+      <!-- gridlines -->
+      <g stroke="#e0dccf" stroke-width="1">
+        <line x1="80" y1="60" x2="900" y2="60"/>
+        <line x1="80" y1="130" x2="900" y2="130"/>
+        <line x1="80" y1="200" x2="900" y2="200"/>
+        <line x1="80" y1="270" x2="900" y2="270"/>
+        <line x1="80" y1="330" x2="900" y2="330"/>
+      </g>
+      <g font-family="Inter, sans-serif" font-size="12" fill="#8d8779">
+        <text x="72" y="64" text-anchor="end">1,900 m</text>
+        <text x="72" y="134" text-anchor="end">1,600 m</text>
+        <text x="72" y="204" text-anchor="end">1,300 m</text>
+        <text x="72" y="274" text-anchor="end">1,000 m</text>
+        <text x="72" y="334" text-anchor="end">700 m</text>
+      </g>
+
+      <!-- profile -->
+      <path d="M80 330 C140 322 190 306 240 282 C300 252 350 224 410 196 C470 168 520 150 580 128 C640 106 680 96 730 84 C770 74 800 68 830 62 L900 58 L900 340 L80 340 Z" fill="url(#proffill)"/>
+      <path d="M80 330 C140 322 190 306 240 282 C300 252 350 224 410 196 C470 168 520 150 580 128 C640 106 680 96 730 84 C770 74 800 68 830 62 L900 58" fill="none" stroke="#29505f" stroke-width="2.6" stroke-linecap="round"/>
+
+      <!-- annotations -->
+      <g font-family="Fraunces, serif" font-style="italic" font-size="14.5" fill="#29505f">
+        <text x="150" y="290">forest, already climbing</text>
+        <text x="400" y="165">the middle: no mercy, no views yet</text>
+        <text x="700" y="132">boulders &amp; headwall</text>
+        <text x="838" y="44">the lake</text>
+      </g>
+      <g stroke="#a0713f" stroke-width="1.4" opacity="0.85">
+        <line x1="760" y1="112" x2="760" y2="82"/>
+      </g>
+      <circle cx="900" cy="58" r="4.5" fill="#29505f"/>
+      <circle cx="80" cy="330" r="4.5" fill="#6f6c66"/>
+
+      <!-- x axis -->
+      <line x1="80" y1="340" x2="900" y2="340" stroke="#bfb9a8" stroke-width="1.2"/>
+      <g font-family="Inter, sans-serif" font-size="12" fill="#8d8779" text-anchor="middle">
+        <text x="80" y="362">0 km</text>
+        <text x="315" y="362">&asymp;2 km</text>
+        <text x="550" y="362">&asymp;4 km</text>
+        <text x="785" y="362">&asymp;6 km</text>
+        <text x="900" y="362">&asymp;7 km</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="segments">
+    <div class="seg-row">
+      <span class="km">Lower</span>
+      <span class="what"><strong>Forest climbing, immediately.</strong> There&rsquo;s no warm-up kilometre on this trail. Shaded, rooty, steadily and honestly steep. Settle into a pace you can hold for hours.</span>
+      <span class="feel">Steep</span>
+    </div>
+    <div class="seg-row">
+      <span class="km">Middle</span>
+      <span class="what"><strong>The grind.</strong> The longest stretch and the most psychological one &mdash; big gain, few views, and the summit of your patience. This is where poles and snacks pay rent.</span>
+      <span class="feel">Steeper</span>
+    </div>
+    <div class="seg-row">
+      <span class="km">Upper</span>
+      <span class="what"><strong>Boulders and the headwall.</strong> The trail dissolves into rough rock near the top &mdash; hands-on-knees terrain where you pick your line. Slow, careful, and finally in the open.</span>
+      <span class="feel">Hands on rock</span>
+    </div>
+    <div class="seg-row">
+      <span class="km">Down</span>
+      <span class="what"><strong>The part people underestimate.</strong> All 1,200 metres come back out through your knees and ankles. It&rsquo;s slower than the climb-time math suggests. Save legs, daylight, and water for it.</span>
+      <span class="feel">The real test</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GLACIER ===================== -->
+<section class="glacier" id="glacier">
+  <div class="wrap">
+    <div class="glacier-grid">
+      <div>
+        <div class="eyebrow">The Glacier &middot; A Front-Row Seat</div>
+        <h2>The ice is leaving, and you can see it happen.</h2>
+        <p style="margin-top:1.2rem;">The Wedgemount Glacier has retreated dramatically within living memory. Its toe once reached down near the lake itself; today the ice sits pulled back and diminished above the moraine, and hikers who return across the decades describe the difference in the stunned tone people usually save for demolished childhood homes.</p>
+        <p>That makes this basin one of the most legible climate-change classrooms in the Coast Mountains. You don&rsquo;t need a chart or a satellite pass &mdash; you stand at the lake, look at where the ice is, look at the raw scoured rock where it recently was, and do the arithmetic yourself.</p>
+        <div class="glacier-rules">
+          <strong>Standing Orders</strong>
+          Respect the moraine &mdash; it&rsquo;s loose, unstable ground, not a staircase. And do not walk out onto the glacier unless you are roped, equipped, and trained for glacier travel. Crevassed ice does not grade on effort.
+        </div>
+      </div>
+      <div class="glacier-fig">
+        <svg viewBox="0 0 480 340" role="img" aria-label="Then-and-now diagram: a dashed outline shows the Wedgemount Glacier's former extent reaching near the lake; a smaller solid shape shows today's diminished ice pulled back up the cirque.">
+          <!-- cirque wall -->
+          <path d="M30 300 C60 220 100 150 160 100 C220 52 300 30 380 42 C430 50 458 74 462 108 C466 150 452 210 430 262 L430 300 Z" fill="none" stroke="rgba(207,226,230,0.4)" stroke-width="1.6"/>
+          <!-- former extent (dashed) -->
+          <path d="M120 268 C140 216 176 160 226 124 C276 88 336 74 386 84 C420 92 436 112 436 138 C436 176 420 222 398 258 C350 272 260 276 190 274 C160 272 134 272 120 268 Z"
+                fill="rgba(159,194,204,0.10)" stroke="#9fc2cc" stroke-width="2" stroke-dasharray="8 6"/>
+          <!-- today (solid) -->
+          <path d="M258 148 C290 118 340 104 380 110 C408 116 420 130 420 148 C420 172 408 198 392 218 C358 226 306 226 276 218 C258 212 248 196 250 178 C252 166 254 156 258 148 Z"
+                fill="#dcebee" stroke="#f2f7f8" stroke-width="1.6"/>
+          <path d="M290 140 L296 200 M322 126 L326 210 M356 120 L358 214 M388 126 L386 204" stroke="#b0ccd3" stroke-width="1.2" fill="none" opacity="0.85"/>
+          <!-- lake -->
+          <path d="M96 292 C140 282 210 282 258 288 C280 292 288 300 282 308 C240 318 150 318 108 310 C92 306 86 298 96 292 Z" fill="#4d8496" stroke="#8fc3cd" stroke-width="1.4"/>
+          <!-- labels -->
+          <g font-family="Fraunces, serif" font-style="italic" font-size="15">
+            <text x="128" y="140" fill="#9fc2cc">former extent &mdash; toe near the lake</text>
+            <text x="338" y="166" fill="#29505f" text-anchor="middle">today</text>
+            <text x="186" y="304" fill="#dcebee" text-anchor="middle">the lake</text>
+          </g>
+          <g font-family="Inter, sans-serif" font-size="11" fill="rgba(207,226,230,0.65)">
+            <text x="30" y="330">Diagram is schematic &mdash; extents drawn from memory and moraine lines, not survey data.</text>
+          </g>
+        </svg>
+        <p class="figcap">Fig. 2 &mdash; Then and now, schematically. The dashed line is the part that should bother you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FIELD NOTES ===================== -->
+<section class="notes">
+  <div class="wrap">
+    <div class="eyebrow">Field Notes &middot; Small Details That Stay</div>
+    <div class="notes-grid">
+      <div class="note">
+        <span class="n">No. 1 &middot; The colour</span>
+        <h3>Milk-turquoise, no filter</h3>
+        <p>Rock flour &mdash; stone ground to powder by the glacier &mdash; hangs suspended in the water and scatters the light. The colour shifts through the day and the season, and it photographs less well than it looks, which is a rare compliment.</p>
+      </div>
+      <div class="note">
+        <span class="n">No. 2 &middot; The residents</span>
+        <h3>Marmots on the boulders</h3>
+        <p>Hoary marmots whistle from the rocks around the basin &mdash; a sharp, piercing note that sounds exactly like someone refereeing your final ascent. They&rsquo;re fat, unbothered, and not to be fed. Watch from a distance and let them run the place.</p>
+      </div>
+      <div class="note">
+        <span class="n">No. 3 &middot; The calendar</span>
+        <h3>Snow into July</h3>
+        <p>The basin holds snow late &mdash; patches linger around the lake well into July, and the upper trail can carry snow when the valley is in full summer. Check current conditions before trusting a July date, and pack like the season is a month behind.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HUT + PLATFORMS ===================== -->
+<section class="sleep" id="sleep">
+  <div class="wrap">
+    <div class="eyebrow">Sleeping Up There</div>
+    <h2 style="max-width:26ch;">Two ways to wake up at 1,900 metres.</h2>
+
+    <div class="sleep-grid">
+      <div class="sleep-card">
+        <span class="tag">The Hut</span>
+        <h3>The small BCMC hut</h3>
+        <p>A modest mountaineering hut sits near the lake &mdash; small, simple shelter of the old school, maintained through the BCMC. Whether a night there is first-come-first-served or bookable has varied; <em>check the BCMC directly for current rules</em> before you build a plan around a bunk.</p>
+        <p>Treat it as a bonus, not a guarantee &mdash; and treat the building itself like the volunteer-kept artifact it is. Pack out everything.</p>
+      </div>
+      <div class="sleep-card">
+        <span class="tag">The Platforms</span>
+        <h3>BC Parks tent platforms</h3>
+        <p>BC Parks maintains tent platforms at the lake, and backcountry camping runs on reservations &mdash; book through BC Parks before you go up. Day-use pass requirements in Garibaldi are seasonal and change; check the BC Parks Garibaldi page for what applies to your date.</p>
+        <p>An evening and a dawn at the lake is the strongest argument for carrying overnight weight up that grade. The light show is the refund.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHEN TO GO ===================== -->
+<section class="season" id="season">
+  <div class="narrow">
+    <div class="eyebrow">When to Go</div>
+    <h2>The honest calendar.</h2>
+
+    <div class="season-rows">
+      <div class="season-row">
+        <span class="m">Nov &ndash; May</span>
+        <span class="d">Deep snow, winter hazards, and a trail that was hard enough dry. This is ski-mountaineer and experienced-winter-traveller territory, not a hiking season. Check current conditions and avalanche bulletins.</span>
+        <span class="verdict no">Not a hike</span>
+      </div>
+      <div class="season-row">
+        <span class="m">Jun &ndash; early Jul</span>
+        <span class="d">The valley says summer; the basin disagrees. Snow lingers at the lake and on the upper trail into July. Doable for experienced parties who check conditions &mdash; frustrating for everyone else.</span>
+        <span class="verdict maybe">Check first</span>
+      </div>
+      <div class="season-row">
+        <span class="m">Mid-Jul &ndash; Sep</span>
+        <span class="d">The window. The trail runs mostly clear, the lake is at full colour, the marmots are in mid-season form. Start early &mdash; the climb is hot work and the day is genuinely full.</span>
+        <span class="verdict go">Go</span>
+      </div>
+      <div class="season-row">
+        <span class="m">Late Sep &ndash; Oct</span>
+        <span class="d">Cold, quiet, and beautiful up top &mdash; with shrinking daylight against a full-day trail. Fine for fit, early-starting parties watching the forecast; the margin for a slow descent gets thin.</span>
+        <span class="verdict maybe">Short days</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HONEST NOTE ===================== -->
+<section class="honest">
+  <div class="narrow">
+    <div class="eyebrow">Honest Note &middot; What the Brochures Leave Out</div>
+    <h2>Read this part before you commit.</h2>
+    <p style="margin-top:1.4rem;">Wedgemount is sometimes filed under &ldquo;hard hike&rdquo; as if it were a Joffre with attitude. It isn&rsquo;t. It&rsquo;s a different category of day: <em>this is not a beginner objective</em>, and the people who have a bad time here are almost always the ones who treated the distance &mdash; a friendly-sounding 7 km &mdash; as the whole story. The story is the vertical.</p>
+    <p>The descent deserves its own paragraph everywhere it&rsquo;s mentioned, so: the descent is the dangerous half. Tired legs, 1,200 metres of down, loose rock in the upper section &mdash; this is where knees and ankles blow up and where trips over-run their daylight. Poles, real footwear, and a turnaround time you actually honour.</p>
+    <p>The access spur off Highway 99 is short gravel; its condition varies year to year, so check recent reports before assuming any car can make it. No dogs anywhere in Garibaldi Provincial Park &mdash; that one is absolute. And the water is glacial: beautiful to look at, minutes-cold to swim in. Nobody lingers.</p>
+    <div class="honest-flag">
+      <strong>Paperwork &middot; Check Before Driving Up</strong>
+      Garibaldi Provincial Park has used seasonal day-use pass requirements, and backcountry camping at Wedgemount runs on BC Parks reservations. Rules shift season to season &mdash; check the BC Parks Garibaldi page for your date, and the BCMC for current hut practice, before you commit.
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TRAILHEAD SUPPORT ===================== -->
+<section class="support" id="support">
+  <div class="wrap">
+    <div class="eyebrow">Trailhead Support</div>
+    <h2 style="max-width:26ch;">Wedgemount is a hike. A brutal, excellent hike.</h2>
+    <p style="max-width:62ch; margin-top:1rem;">Nothing paddles up a headwall &mdash; there&rsquo;s no rental angle at the lake and we won&rsquo;t invent one. What we can do is make the logistics around the trail lighter.</p>
+
+    <div class="support-grid">
+      <div class="support-card">
+        <h3>Gear drop &amp; pickup</h3>
+        <p>Poles, dry bags, overnight kit staged to your trailhead-day plans in the corridor &mdash; so the drive north of Whistler starts with everything already sorted.</p>
+        <a class="cta" href="https://rentedlocal.com/Profile?userId=698a2b3bca1e37a683b7bfeb" target="_blank" rel="noopener">Arrange a drop</a>
+      </div>
+      <div class="support-card">
+        <h3>Local trip-planning help</h3>
+        <p>First time up something this steep? Get a local read on conditions, timing, turnaround discipline, and whether your party and the headwall should meet this year.</p>
+        <a class="cta" href="https://rentedlocal.com/Profile?userId=698a2b3bca1e37a683b7bfeb" target="_blank" rel="noopener">Ask a local</a>
+      </div>
+    </div>
+
+    <p class="recovery">And for the day after &mdash; when the stairs at your rental are suddenly a moral question &mdash; the kindest thing in the corridor is flat water. An easy canoe or SUP float in Squamish through <a class="ul" href="https://squamishcanoerental.com/">Squamish Canoe Rental</a> uses exactly none of the muscles Wedgemount just spent, and the canoes take up to three paddlers, so the sorest member of the party can ride in the middle. <em>Climb Saturday, float Sunday.</em></p>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="faq" id="faq">
+  <div class="narrow">
+    <div class="eyebrow">Questions &amp; Answers</div>
+    <h2>What people actually ask about Wedgemount.</h2>
+
+    <div class="faq-list">
+      <details class="qa">
+        <summary><span class="qmark">+</span>How hard is the Wedgemount Lake hike, really?</summary>
+        <div class="ans">
+          <p>Genuinely hard &mdash; widely treated as the steepest worthwhile trail in the Whistler corridor. On the order of 1,200 m of elevation gain in about 7 km one-way, with almost no flat relief and a rough boulder/headwall section near the top where you&rsquo;ll use your hands. Fit hikers still call it a full day. It is not a beginner objective, and it&rsquo;s a poor choice for testing new boots or new knees.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary><span class="qmark">+</span>How long does Wedgemount Lake take?</summary>
+        <div class="ans">
+          <p>Budget a full day. Climb times vary a lot with fitness, but the trap is the descent &mdash; 1,200 m of down on tired legs takes longer than the math suggests and is where injuries happen. Start early, set a turnaround time, and keep water and daylight in reserve for the way out.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary><span class="qmark">+</span>Is there a hut at Wedgemount Lake?</summary>
+        <div class="ans">
+          <p>Yes &mdash; a small BCMC hut sits near the lake. It&rsquo;s modest, volunteer-maintained shelter, and whether a night there runs first-come-first-served or by booking has varied, so check the BCMC directly for current rules. BC Parks also maintains tent platforms at the lake with backcountry camping by reservation.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary><span class="qmark">+</span>Do I need a day-use pass for Wedgemount Lake?</summary>
+        <div class="ans">
+          <p>Garibaldi Provincial Park has used seasonal day-use pass requirements, and camping runs on BC Parks reservations. The rules change season to season, so check the BC Parks Garibaldi page for the dates you&rsquo;re planning rather than trusting last year&rsquo;s answer &mdash; or this page&rsquo;s.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary><span class="qmark">+</span>Can you see the Wedgemount Glacier from the lake?</summary>
+        <div class="ans">
+          <p>Yes &mdash; the glacier hangs above the basin, though far less of it than there used to be. The ice has retreated dramatically within living memory; its toe once reached near the lake. Look, photograph, and be moved &mdash; but stay off the loose moraine slopes and never walk on the glacier itself unless you&rsquo;re roped, equipped, and trained for glacier travel.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary><span class="qmark">+</span>Are dogs allowed at Wedgemount Lake?</summary>
+        <div class="ans">
+          <p>No. Dogs are not permitted anywhere in Garibaldi Provincial Park &mdash; the rule covers the trail, the lake, and the campsites. Plan boarding in Whistler or Squamish if you&rsquo;re travelling with one.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary><span class="qmark">+</span>When does the snow melt at Wedgemount Lake?</summary>
+        <div class="ans">
+          <p>Late &mdash; the basin sits at roughly 1,900 m and holds snow around the lake well into July, even when Whistler valley is in full summer. Mid-July through September is the reliable window, and even then, check current conditions before you go.</p>
+          <p>Planning more of the corridor? Wedgemount pairs naturally with our guides to <a href="https://panoramaridgewhistler.com/">Panorama Ridge</a> and <a href="https://russetlake.com/">Russet Lake</a> on the Garibaldi side, or <a href="https://waterspritelake.com/">Watersprite Lake</a> for the steep-hut cousin over in Squamish.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>This Guide</h4>
+        <p>Wedgemount Lake is Vol. II, No. 15 of the Sea to Sky Trails &mdash; a slow-built, reader-funded field guide to the lakes, climbs, and quiet corners of the Coast Mountains. Part of the <a class="ul" href="https://seatoskytrails.com/">Sea to Sky Trails</a>.</p>
+      </div>
+      <div>
+        <h4>More Field Guides</h4>
+        <ul>
+          <li><a href="https://panoramaridgewhistler.com/">Panorama Ridge</a></li>
+          <li><a href="https://russetlake.com/">Russet Lake</a></li>
+          <li><a href="https://waterspritelake.com/">Watersprite Lake</a></li>
+          <li><a href="https://joffrelake.com/">Joffre Lakes</a></li>
+          <li><a href="https://callaghanlake.com/">Callaghan Lake</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Trailhead Support</h4>
+        <ul>
+          <li><a href="https://rentedlocal.com/Profile?userId=698a2b3bca1e37a683b7bfeb" target="_blank" rel="noopener">Gear drop &amp; pickup</a></li>
+          <li><a href="https://squamishcanoerental.com/">Recovery-day paddling &middot; Squamish Canoe Rental</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div><em>Sea to Sky Trails</em> &middot; Vol. II, No. 15 &middot; Published in the shared territory of the Sḵwx̱wú7mesh (Squamish) and L̓il̓wat7úl (Líl̓wat) Nations.</div>
+      <div>Set in Fraunces &amp; Inter. Reader-funded. <a class="ul" href="https://seatoskytrails.com/">seatoskytrails.com</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== STRUCTURED DATA ===================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TouristAttraction",
+  "name": "Wedgemount Lake",
+  "description": "A milk-turquoise glacial lake at roughly 1,900 m in Garibaldi Provincial Park, north of Whistler, BC, beneath Wedge Mountain and the retreating Wedgemount Glacier. Reached by one of the steepest trails in the Sea to Sky corridor: on the order of 1,200 m of gain in about 7 km one-way.",
+  "url": "https://wedgemountlake.com/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "BC",
+    "addressLocality": "Whistler",
+    "addressCountry": "CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 50.16,
+    "longitude": -122.80
+  },
+  "isAccessibleForFree": true,
+  "publicAccess": true,
+  "touristType": ["Hikers", "Backpackers", "Mountaineers"]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How hard is the Wedgemount Lake hike, really?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Genuinely hard — widely treated as the steepest worthwhile trail in the Whistler corridor. On the order of 1,200 m of elevation gain in about 7 km one-way, with almost no flat relief and a rough boulder and headwall section near the top where you'll use your hands. Fit hikers still call it a full day. It is not a beginner objective." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does Wedgemount Lake take?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Budget a full day. Climb times vary with fitness, but the descent is the trap — 1,200 m of down on tired legs takes longer than expected and is where knees and ankles get injured. Start early, set a turnaround time, and keep water and daylight in reserve for the way out." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a hut at Wedgemount Lake?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — a small BCMC hut sits near the lake. Whether a night there runs first-come-first-served or by booking has varied, so check the BCMC directly for current rules. BC Parks also maintains tent platforms at the lake with backcountry camping by reservation." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a day-use pass for Wedgemount Lake?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Garibaldi Provincial Park has used seasonal day-use pass requirements, and camping runs on BC Parks reservations. The rules change season to season, so check the BC Parks Garibaldi page for the dates you are planning." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you see the Wedgemount Glacier from the lake?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — the glacier hangs above the basin, though far less of it than there used to be. The ice has retreated dramatically within living memory; its toe once reached near the lake. Stay off the loose moraine slopes and never walk on the glacier unless roped, equipped, and trained for glacier travel." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are dogs allowed at Wedgemount Lake?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Dogs are not permitted anywhere in Garibaldi Provincial Park — the rule covers the trail, the lake, and the campsites." }
+    },
+    {
+      "@type": "Question",
+      "name": "When does the snow melt at Wedgemount Lake?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Late — the basin sits at roughly 1,900 m and holds snow around the lake well into July, even when the Whistler valley is in full summer. Mid-July through September is the reliable window, and even then it's worth checking current conditions before you go." }
+    }
+  ]
+}
+</script>
+
+</body>
+</html>

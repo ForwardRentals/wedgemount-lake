@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#f4f2ec"/>
+  <!-- steep slope in cross-section -->
+  <path d="M6 54 C16 52 24 44 32 32 C38 23 43 16 47 13" fill="none" stroke="#6f6c66" stroke-width="3" stroke-linecap="round"/>
+  <!-- lake at the top -->
+  <path d="M44 16 C48 14 54 14 58 16 C58 19 54 21 51 21 C48 21 44 19 44 16 Z" fill="#3d6b7d"/>
+  <!-- shrinking glacier above, dashed former extent -->
+  <path d="M42 9 C47 5 55 4 60 7" fill="none" stroke="#9fc2cc" stroke-width="2" stroke-dasharray="3 3" stroke-linecap="round"/>
+  <!-- marmot dot on the boulders -->
+  <circle cx="38" cy="26" r="2.6" fill="#7a5230"/>
+</svg>
