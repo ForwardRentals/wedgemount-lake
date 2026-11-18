@@ -1,11 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#f4f2ec"/>
-  <!-- steep slope in cross-section -->
-  <path d="M6 54 C16 52 24 44 32 32 C38 23 43 16 47 13" fill="none" stroke="#6f6c66" stroke-width="3" stroke-linecap="round"/>
-  <!-- lake at the top -->
-  <path d="M44 16 C48 14 54 14 58 16 C58 19 54 21 51 21 C48 21 44 19 44 16 Z" fill="#3d6b7d"/>
-  <!-- shrinking glacier above, dashed former extent -->
-  <path d="M42 9 C47 5 55 4 60 7" fill="none" stroke="#9fc2cc" stroke-width="2" stroke-dasharray="3 3" stroke-linecap="round"/>
-  <!-- marmot dot on the boulders -->
-  <circle cx="38" cy="26" r="2.6" fill="#7a5230"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" >
+<defs><clipPath id="c"><rect width="64" height="64" rx="15"/></clipPath></defs>
+<g clip-path="url(#c)">
+<rect width="64" height="64" fill="#0d1f1c"/>
+<circle cx="45" cy="19" r="6.5" fill="#ee7a35"/>
+<path d="M-4 48 L14 27 L24 37 L35 22 L68 56 L68 70 L-4 70Z" fill="#1d5a49"/>
+<path d="M9 50 L28 14 L47 50 Z" fill="#f6f4ee"/>
+<path d="M28 14 L34 25.5 L30.5 23.5 L28 28 L25.5 23.5 L22 25.5Z" fill="#cfe3e0"/>
+<path d="M27 48.5 L38 43 L20 37.5 L35 32 L22 26.5 L31 22 L28 17.5" fill="none" stroke="#ee7a35" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3.2 3.4"/>
+<path d="M-2 48.5 q6.5 -4.5 13 0 t13 0 t13 0 t13 0 t13 0 t13 0 V70 H-2Z" fill="#7cc4d4"/>
+<path d="M-2 55 q6.5 -4 13 0 t13 0 t13 0 t13 0 t13 0 t13 0" fill="none" stroke="#0d1f1c" stroke-opacity=".28" stroke-width="2"/>
+</g></svg>
